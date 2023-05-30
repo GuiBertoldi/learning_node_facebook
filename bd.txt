@@ -1,0 +1,5 @@
+create table actions (idActions int not null auto_increment primary key, id int not null, `like` int, love int, share int, coments varchar(500), constraint fk_id foreign key (id) references feed(id));
+
+create table feed (id int not null auto_increment primary key, user varchar(30), `date` date, icon varchar(30), text varchar(1500));
+
+AINDA NÃO CONSEGUI MONTAR O FRONT, MAS VOU MONTAR E REENVIAR COM ELE PRONTO
